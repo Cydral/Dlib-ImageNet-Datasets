@@ -7,11 +7,18 @@ This repository provides **ready-to-use ImageNet-1K datasets** preprocessed in m
 🚀 **Immediately available**:  
 - A ready-to-use **32×32 resolution dataset** (ideal for lightweight model prototyping) in the /dataset directory.
 
-🛠️ **Flexible generation**:  
-The included C++14 tool lets you create custom datasets in **any resolution** (e.g., 64×64, 128×128, 224×224, etc.) from raw ImageNet-1K sources. Perfect for:  
+🛠️ **Flexible generation** - The included C++14 tool lets you create custom datasets in **any resolution** (e.g., 64×64, 128×128, 224×224, etc.) from raw ImageNet-1K sources. Perfect for:  
 - Rapid experimentation  
 - Resolution-impact benchmarking  
 - Consistent model training pipelines
+
+🔧 **Usage** - The raw "Stable ImageNet-1K" images can be downloaded from:  
+→ [Kaggle Dataset](https://www.kaggle.com/datasets/vitaliykinakh/stable-imagenet1k)
+1. Download and extract the compressed file locally  
+2. Point the extraction root directory to our processing tool:  
+```bash
+./create_dataset path/to/extracted_folder output_dataset.dat 224  # Example for 224x224
+```
 
 ## Create Custom Datasets
 Compile and run the included tool to process raw ImageNet-1K images:
